@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+}
+
+:root{
+    --head_color:#fee101;
+    --head_second_color:#dad89d;
+    --grey:#888888;
+    --Montserrat:'Montserrat', sans-serif;
+    --fedrick:'Fredericka the Great', cursive;
+}
+
+#_mainWrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+
+._mainContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--head_color);
+    margin: 0 auto ;
+    overflow: hidden;    
+    position: relative;
+    z-index: -1;
+
+
+}
+
+ 
+
+._partition {
+    height: inherit;
+    width: 49%;
+    background-color: var(--head_second_color);
+    transform: skew(-17deg,0deg);
+    position: absolute;
+    top: 1px;
+    right: -99px;
+    margin: 0;
+    z-index: -1;
+}
+
+
+/*  navbar design starts here  */
+
+
+#Home_mainWrapper{
+    z-index: 999;
+    height: 150px;
+    width: 100%;
+}
+
+#Home_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+
+.main_Subsection1{
+    display: flex;
+}
+
+.main_Subsection2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#topPart{
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: flex-end;
+
+}
+
+.main_sub_rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main_sub_leftSide{
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main_sub_leftSide>aside>h5:nth-child(1){
+    padding-left: 20px;
+}
+.main_sub_leftSide>aside >h3:last-child{
+    
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+/* ? this is for right side of navbar */
+
+.main_Subsection1 >.place_Font >img{
+    width: 200px;
+}
+
+/* ? this is for right side of navbar */
+
+
+#bottomPart{
+    
+    padding-right: 20px;
+    margin-right: 20px;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+
+}
+#bottomPart>ul{
+    display: flex;
+    list-style-type: none;
+   gap: 90px;
+   justify-content: space-between;
+   padding-top: 9px;
+   
+}
+
+#bottomPart>ul>li:nth-child(2){
+    padding-right: 20px;
+}
+#bottomPart>ul>li:nth-child(3){
+    padding-right: 20px;
+}
+/*  navbar design ends here  */
+
+
+
+/* ? top nav body section starts here */
+
+#topBodyCOntainer{
+    width: 100%;
+    height: calc( 100vh - 150px);
+    z-index: 999;
+}
+
+#topBodyCOntainer>.topBodyWrapper{
+    display: flex;
+    height: inherit;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#topBodyCOntainer>.topBodyWrapper>.topBody_LeftSide{
+    width: 50%;
+}
+
+#topBodyCOntainer>.topBodyWrapper>.topBody_RightSide{
+    width: 50%;
+    
+}
+
+
+#topBodyCOntainer>.topBodyWrapper>.topBody_RightSide >img{
+position: absolute;
+   height: 150%;
+   right: 190px;
+    top: -120px;
+
+}
+
+#topBodyCOntainer>.topBodyWrapper>.topBody_RightSide>div>img{
+    position: relative;
+top: 340px;
+left: 300px;
+
+
+}
+
+
+/* ? left side of nav main body */
+
+.topBody_LeftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+
+
+}
+
+._small_Images{
+    display: flex;
+
+}
+
+
+.Start_body>div{
+    display: flex;
+    text-align: center;
+    gap:50px;
+}
+.Start_body>div>h2{
+    font-family: var(--Montserrat);
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: black
+    
+}
+
+.Start_body >h1{
+    font-family: var(--fedrick);
+    font-weight: 700;
+    font-size: 60px;
+color: rgba(0, 0, 0, 0.781);    padding-top: 10px;
+}
+
+.Start_body>h4{
+    display: flex;
+    align-items: center;
+    padding: 5px 25px;
+    font-family: var(--Montserrat);
+    box-sizing:content-box;
+}
+
+.line{
+    height: 1px;
+    width: 40%;
+    border-bottom: 1px solid black;
+   margin-left: 10px;
+   padding-top: 10px;
+}
+
+.Middle_body{
+    display: flex;
+    justify-content: flex-start;
+    width: 62%;
+    padding: 10px 0;
+}
+
+.Middle_body>h3{
+    text-align: center;
+    margin: 0 auto;
+    width: 290px;
+    line-height: 25px;
+    font-family: var(--fedrick);
+    text-transform: uppercase;
+    color: #776900;
+    padding-left: 20px
+    ;
+
+
+}
+
+.Middle_body>h4{
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fedrick);
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #776900;
+    padding-right: 20px;
+
+
+}
+
+.end_Body{
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.end_Body >button{
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-weight: 900;
+}
+
+._small_Images{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+/*  top nav body section Ends here */
+
+/*  awesome body start here  */
+
+.midBody_wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+
+.midBody_container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+
+.second_side_image>img{
+    position: absolute;
+    top: -210px;
+    /* bottom: 265px; */
+    left: -211px;
+}
+
+.midBody1>h1{
+    font-family: var(--fedrick);
+    font-weight: 800;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.midBody2 >p{
+    width: 90%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.midBody3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 10px;
+    z-index: 999;
+}
+
+.sameState aside:nth-of-type(2) h4{
+
+    text-transform: uppercase;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.sameState aside:nth-of-type(3) p{
+    font-weight: 200;
+    line-height: 20px;
+    font-family: var(--Montserrat);
+    padding-bottom: 20px;
+}
+
+.midBody3>.sameState aside:nth-of-type(4) button{
+    height: 40px;
+    width: 150px;
+    background-color: var(--head_color);
+    color: black;
+    padding: 10px 15px;
+    font-weight: 900;
+    border: none;
+
+}
+
+
+.Line2{
+    height: 70px;
+    width: 100%;
+    background-color:#e8e6a9;
+    position: absolute;
+    bottom: 300px;
+    z-index: 0;
+}
+/*  awesome body Ends here  */
+
+
+/*  part3 starts here enjoy */
+
+#part3_container{
+    height: 100vh;
+    width: 100%;
+}
+
+.part3_Wrapper{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.part3_Wrapper>aside:nth-of-type(1) h5{
+    font-family: var(--Montserrat);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.part3_Wrapper>aside:nth-of-type(2) h1{
+    font-family: var(--fedrick);
+    text-transform: uppercase;
+    font-size: 29px;
+    padding: 20px;
+    color: var(--grey);
+    letter-spacing: 1px;
+}
+
+.part3_Wrapper>aside:nth-of-type(3) p{
+    width: 95%;
+    text-align: center;
+    color: var(--grey);
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+.sub_image_wrapper{
+    width: 100%;
+    position: relative;
+    padding-top: 15px;
+}
+
+.sub_image_wrapper >section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.sub_image_wrapper >section>div>img{
+    object-fit: fill;
+    
+}
+
+.sub_imagepart2>img{
+    position: absolute;
+    top: 17px;
+    right: 390px;
+}
+
+.lineImage{
+     display: flex;
+     padding-top: 190px;
+     justify-content: center;
+}
+
+.lineImage1{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fee101;
+    margin-right: 10px;
+
+}
+
+.lineImage1:nth-of-type(2) div{
+    background-color: grey
+}
+/*  sad it ended so soon  */
+
+
+/* navtop_start here  */
+
+#navTop_image{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.navTop_wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 50vh;
+    gap: 10px;
+
+}
+
+
+.navTop_wrapper>.navTop_image1{
+    width: 50%;
+    background-color: red;
+
+}
+
+
+.navTop_wrapper>.navTop_image2{
+    width: 50%;
+
+
+}
+
+.navTop_image1{
+    background-image: url('../Assets/nav1.png');
+    
+    height: 320px;
+    position: relative;
+
+}
+
+.navTop_image1>p{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50px;
+left: 40px;
+text-transform: uppercase;
+
+}
+
+.navTop_image1>h2{
+    width: 20%;
+    font-weight: 800;
+    color: white;
+font-size: 22px;
+text-transform: uppercase;
+position: absolute;
+top: 72px;
+left: 39px;
+line-height: 30px}
+
+
+.navTop_image2{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap: 10px;
+
+
+}
+.SubImage_nav1{
+    position: relative;
+}
+
+.SubImage_nav1>h4{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 30px;
+left: 30px;
+text-transform: uppercase;
+    
+}
+
+.SubImage_nav1>h1{
+    width: 25%;
+    font-weight: 800;
+    color: white;
+font-size: 18px;
+text-transform: uppercase;
+position: absolute;
+top: 60px;
+left: 30px;
+line-height: 30px;
+letter-spacing: 2px;
+}
+
+.SubImage_nav2{
+    position: relative;
+}
+.SubImage_nav2>h4{
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 30px;
+left: 30px;
+text-transform: uppercase;
+}
+
+.SubImage_nav2>h1{
+    width: 40%;
+    font-weight: 800;
+    color: white;
+font-size: 18px;
+text-transform: uppercase;
+position: absolute;
+top: 60px;
+left: 30px;
+line-height: 30px;
+letter-spacing: 2px;
+}
+/*  navtop stops here */
+
+
+/*  navbar i am strting here  */
+
+#register_part{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+#register_part>.Register{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    padding-bottom: 10px;
+
+}
+#register_part>.Register >aside >p{
+    font-family: var(--Montserrat);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+
+#register_part>.Register >aside>h1{
+    font-family: var(--fedrick);
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--grey);
+    padding-bottom: 20px;
+}
+
+.table{
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+    
+}
+
+.table>aside:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table>aside:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table>aside>div>input{
+    padding: 7px 0;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.table>aside>div>input::placeholder{
+    padding-left: 7px;
+}
+
+.last_button>div:last-child button{
+    background-color: var(--head_color);
+    padding: 7px 0;
+    width: 100%;
+    border: none;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.Register_footer{
+    height: 50vh;
+    background-image: url('../Assets/BG\ Image.png');
+}
+
+.footer_wrapper_last{
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+gap: 40px;}
+
+.footer_wrapper_last>aside{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSection1 >aside>img{
+   height: 50px;
+}
+.footerSection1 >aside>p{
+    width: 50%;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    line-height: 23px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.footerSection2{
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+}
+.footerSection2>aside:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+    padding-bottom: 15px;
+}
+
+.footerSection2>aside:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    color: white;
+
+}
+
+
+.EndOF_footer>div:last-child ul{
+    display: flex;
+    gap: 20px;
+}
+.EndOF_footer>div:last-child ul>li{
+    list-style-type: none;
+color: wheat;}
+.EndOF_footer >div:nth-of-type(1) p{
+    color: white;
+}
